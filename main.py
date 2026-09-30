@@ -1,5 +1,4 @@
 import cv2
-from icecream import ic
 from util import *
 mask_path = ".\samples\parking_lot_mask.png"
 video_path = ".\samples\parking_lot_extended.mp4"
@@ -10,7 +9,6 @@ cv2.imshow('Mask', mask)
 cap = cv2.VideoCapture(video_path)
 
 connected_components = cv2.connectedComponentsWithStats(mask, 4, cv2.CV_32S)
-#ic(connected_components)
 
 bboxes = get_parking_spots_bboxes(connected_components)
 

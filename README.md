@@ -25,7 +25,6 @@ Requires Python 3.
 python -m venv venv
 venv\Scripts\activate          # on macOS/Linux: source venv/bin/activate
 pip install -r requirements.txt
-pip install icecream
 ```
 
 ### Files not included in the repo
